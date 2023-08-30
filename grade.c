@@ -12,8 +12,8 @@ void main(){
         printf("Your Grade is %c",grade);
    }
      else if(mark>=80 && mark<90){
-        grade='A';
-        printf("Your Grade is %c",grade);
+       // grade='A';
+        printf("Your Grade is %c",grade='A');
    }
   else if(mark>=70 && mark<80){
         grade='B';
