@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 void main(){
-    int icalls=100,isms,imb=100,idays=28;
-    int choice,calls,sms,mb,days,call2;
+    int icalls=100,isms=100,imb=1000,idays=28;
+    int choice,calls,sms,mb,days,call2,sms2,mb2;
     printf("Select your Pack : ");
     printf("\n1)199 \n2)299 \n3)799");
     printf("\nEnter Your choice : ");
@@ -14,7 +14,7 @@ void main(){
         scanf("%d",&days);
         //calls=icalls-calls;
         if(days>28){
-            printf("\nYou have existed");
+            printf("\nYour days pack is reversed");
         }
         else{
             days=idays-days;
@@ -25,11 +25,44 @@ void main(){
     
         
         if(calls>100){
-            printf("\nYou have existed");
+            printf("\nYour calls is expired");
         }
         else{
             call2=icalls-calls;
             printf("You have the %d remaining calls",call2);
+
+            // sms
+
+              printf("\nEnter the sms :");
+            scanf("%d",&sms);
+            printf("sms is %d ",sms);
+    
+        
+        if(sms>100){
+            printf("\nYour sms is expired");
+        }
+        else{
+            sms2=isms-sms;
+            printf("You have the %d remaining sms",sms2);
+
+            // data
+
+             printf("\nEnter the data:");
+            scanf("%d",&mb);
+            printf("data is %d ",mb);
+    
+        
+        if(mb>1000){
+            printf("\nYour data is expired");
+        }
+        else{
+            mb2=imb-mb;
+            printf("You have the %d remaining data",mb2);
+
+            
+        }
+
+
         }
             
         }
@@ -47,4 +80,5 @@ void main(){
         printf("The pack is not valid");
         
     }
+}
 }
