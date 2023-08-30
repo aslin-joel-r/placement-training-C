@@ -1,10 +1,11 @@
 #include<stdio.h>
 
 void main(){
-    int a=677;
+    int a=67;
     int seat=a%8;
     
-   switch(seat){
+if(a<=72 && a>0){
+       switch(seat){
 
     case 1:
         printf("L Lower");
@@ -37,5 +38,6 @@ void main(){
     default :
         printf("Side upper");
    }
+}
 
 }
