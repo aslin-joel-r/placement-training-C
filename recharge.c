@@ -3,7 +3,7 @@
 void main(){
     int icalls=100,isms=100,imb=1000,idays=28; // Initial datas
     int choice,calls,sms,mb,days; // Getting user datas
-    int call2,sms2,mb2; // Remaining data
+   
     printf("Select your Pack : ");
     printf("\n1)199 \n2)299 \n3)799");
     printf("\nEnter Your choice : ");
@@ -13,7 +13,7 @@ void main(){
         printf("You have selected pack 1");
         printf("\nEnter the days :");
         scanf("%d",&days);
-        //calls=icalls-calls;
+     
         if(days>28){
             printf("\nYour days pack is expired");
         }
@@ -22,50 +22,38 @@ void main(){
             printf("You have the %d remaining days",days);
             printf("\nEnter the calls :");
             scanf("%d",&calls);
-            printf("calls is %d ",calls);
-    
-        
+          
         if(calls>100){
             printf("\nYour calls is expired");
         }
         else{
-            call2=icalls-calls;
-            printf("You have the %d remaining calls",call2);
+            calls=icalls-calls;
+            printf("You have the %d remaining calls",calls);
 
             // sms
-
-              printf("\nEnter the sms :");
+            printf("\nEnter the sms :");
             scanf("%d",&sms);
-            printf("sms is %d ",sms);
-    
-        
+          
         if(sms>100){
             printf("\nYour sms is expired");
         }
         else{
-            sms2=isms-sms;
-            printf("You have the %d remaining sms",sms2);
+            sms=isms-sms;
+            printf("You have the %d remaining sms",sms);
 
             // data
 
-             printf("\nEnter the data:");
+            printf("\nEnter the data:");
             scanf("%d",&mb);
-            printf("data is %d ",mb);
     
-        
         if(mb>1000){
             printf("\nYour data is expired");
         }
         else{
-            mb2=imb-mb;
-            printf("You have the %d remaining data",mb2);
-
-            
+            mb=imb-mb;
+            printf("You have the %d remaining data",mb);
         }
-
-
         }
-            
         }
         break;
 
