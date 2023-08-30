@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 void main(){
-    int icalls=100,isms=100,imb=1000,idays=28;
-    int choice,calls,sms,mb,days,call2,sms2,mb2;
+    int icalls=100,isms=100,imb=1000,idays=28; // Initial datas
+    int choice,calls,sms,mb,days; // Getting user datas
+    int call2,sms2,mb2; // Remaining data
     printf("Select your Pack : ");
     printf("\n1)199 \n2)299 \n3)799");
     printf("\nEnter Your choice : ");
@@ -14,7 +15,7 @@ void main(){
         scanf("%d",&days);
         //calls=icalls-calls;
         if(days>28){
-            printf("\nYour days pack is reversed");
+            printf("\nYour days pack is expired");
         }
         else{
             days=idays-days;
