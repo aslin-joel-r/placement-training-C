@@ -4,20 +4,28 @@
 void main(){
     
     int num,rem=0;
-    int temp=num;
-    int sum=0;
+    int sum;
     printf("Enter a number :");
     scanf("%d",&num);
-    int digit=1;
+     int temp=num;
+     int digit=1;
+    
      while(num>9){
         num/=10;
         digit++;
      }
-     while(digit){
-        rem=num%10;
+      int d=digit;
+     while(digit>0){
+        rem=temp%10;
+       //  printf("Reamainder is %d",rem);
         temp/=10;
-        sum+=pow(rem,digit);
+       //  printf("Temp is %d",temp);
+        int p=pow(rem,d);
+       // printf("\npower is : %d",p);
+        sum+=p;
+        // printf("\nAmstrong sum is %d",sum);
+        digit--;
      }
-   printf("Number of Digit is %d",digit);
+   printf("\nAmstrong sum is %d",sum);
    
 }
