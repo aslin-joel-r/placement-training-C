@@ -1,4 +1,7 @@
 #include<stdio.h>
+
+// Adding the First and the last digit of a Number
+
 void main(){
 
     int num,sum=0;
@@ -14,5 +17,5 @@ void main(){
     last=num%10;
     sum=first+last;
    
-   printf("\nSum is : %d",sum);
+    printf("\nSum is : %d",sum);
 }

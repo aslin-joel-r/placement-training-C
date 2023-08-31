@@ -1,13 +1,14 @@
 #include<stdio.h>
 
+// Grade calculator program
+
 void main(){
    int mark;
    printf("Enter Your Mark :");
    scanf("%d",&mark);
    char grade;
 
-
-   if(mark>=90  &&  mark<=100){
+     if(mark>=90  &&  mark<=100){
         grade='S';
         printf("Your Grade is %c",grade);
    }
