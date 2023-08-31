@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main(){
 
-    int num,sum=0,tem;
+    int num,sum=0;
     int first,last;
     
     printf("Enter a number :");
