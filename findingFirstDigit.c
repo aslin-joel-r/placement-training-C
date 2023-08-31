@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// Finding the first digit of a number an alternate way
 
 void main(){
     int num;
@@ -11,7 +12,7 @@ void main(){
     while(num>9){
         num/=10;
         digit++;
-        mod*=10;
+        mod*=10; 
     }
      first=num;
    
