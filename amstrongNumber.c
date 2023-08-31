@@ -7,6 +7,7 @@ void main(){
     printf("Enter a number :");
     scanf("%d",&num);
      int temp=num;
+     int check=num;
      int digit=1;
     
      while(num>9){
@@ -21,6 +22,14 @@ void main(){
         sum+=ans;
         digit--;
      }
-   printf("\nAmstrong sum is %d",sum);
+   //printf("\nAmstrong sum is %d",sum);
+
+   if(check==sum){
+      printf("It is a Amstrong number");
+   }
+   else{
+      printf("It is not a Amstrong number because sum is : %d ",sum);
+   
+   }
    
 }
