@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 
 void main(){
     int num;
@@ -19,8 +18,6 @@ void main(){
                 odd+=rem;
                 }
     }
-   
-    int diff=even-odd;
-    diff=abs(diff);
+    int diff= even > odd ? even-odd : odd-even;
     printf("\nDifference is : %d",diff);
 }
