@@ -10,7 +10,7 @@ void main(){
            printf("\n%d ",i);
              for(int j=1;j<=i;j++){
                 if(i%j==0){
-                    printf("\n Sub factors is :%d ",j);
+                    printf("\n\tSub factors is :%d ",j);
            
         }
         
