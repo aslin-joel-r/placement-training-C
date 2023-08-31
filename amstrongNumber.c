@@ -3,8 +3,7 @@
 
 void main(){
     
-    int num,rem=0;
-    int sum;
+    int num,rem=0,sum=0;
     printf("Enter a number :");
     scanf("%d",&num);
      int temp=num;
@@ -14,16 +13,12 @@ void main(){
         num/=10;
         digit++;
      }
-      int d=digit;
-     while(digit>0){
+      int power=digit;
+      while(digit>0){
         rem=temp%10;
-       //  printf("Reamainder is %d",rem);
         temp/=10;
-       //  printf("Temp is %d",temp);
-        int p=pow(rem,d);
-       // printf("\npower is : %d",p);
-        sum+=p;
-        // printf("\nAmstrong sum is %d",sum);
+        int ans=pow(rem,power);
+        sum+=ans;
         digit--;
      }
    printf("\nAmstrong sum is %d",sum);
