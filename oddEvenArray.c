@@ -10,10 +10,8 @@ void main(){
     }
      for(int j=0;j<size;j++){
         printf("\n%d",j);
-        if(arr[j]==0){
-             //printf("- Neither Even or Odd number");
-        }
-        else if(arr[j]%2==0 && arr[j]!=0){
+       
+        if(j%2==0){
             //printf("- Even number");
             even+=arr[j];
         }
