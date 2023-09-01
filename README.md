@@ -1,3 +1,3 @@
 # placement-training-C
 
-## Solving the problems during the placement training class
+## Solving the problems using **C** during the placement training class
