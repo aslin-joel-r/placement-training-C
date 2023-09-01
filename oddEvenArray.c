@@ -9,12 +9,13 @@ void main(){
     for(int i=0;i<size;i++){
         scanf("%d",&arr[i]);
     }
-     for(int j=0;j<size;j+=1){
+     for(int j=1;j<size;j++){
         printf("\n%d",j);
        
         // below
         //even+=arr[j];
         odd+=arr[j];
+        j+=1;
     }
      for(int j=0;j<size;j++){
         printf("\n%d",j);
