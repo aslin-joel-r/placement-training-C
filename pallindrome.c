@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+// pallindrome problem -> reversing a number equal to original number
+
 void main(){
     int num;
     printf("Enter a number :");
