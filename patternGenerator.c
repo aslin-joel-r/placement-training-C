@@ -9,7 +9,7 @@ void main(){
 
     for(int i=1;i<=num;i++){
         for(int j=1;j<=num;j++){
-            if(i==1 || j==1 || (j==num && i<=mid)||i==mid || (i==j && i>=mid)){
+            if(i==1 || j==1 || j==num ||i==mid || i==num){
                     printf("*");
             }
             else{
